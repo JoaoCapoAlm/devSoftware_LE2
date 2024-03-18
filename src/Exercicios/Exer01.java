@@ -10,14 +10,26 @@ public class Exer01 {
 
         var nums = new double[5];
         for(var i = 0; i < 5; i++){
-            nums[i] = Prompt.lerDecimal("Digite um número", false);
+            nums[i] = Prompt.lerDecimal("Digite um número: ", false);
         }
 
         double soma = 0;
         for (double num : nums) {
             soma += num;
         }
+        var media = (soma / 5);
 
-        Prompt.imprimir(String.format("Média: %.2f", (soma / 5)), true);
+        Prompt.linhaEmBranco();
+        Prompt.imprimir(String.format("Média: %.2f", media), true);
+        var mensagem = "";
+        for(var i = 0; i < nums.length; i++){
+            mensagem = "Posição " + i + ": " + nums[i] + " ";
+            if(nums[i] > media)
+                Prompt.imprimir(mensagem + "a cima da média", true);
+            else if (nums[i] < media)
+                Prompt.imprimir(mensagem + "a baixo da média", true);
+            else
+                Prompt.imprimir(mensagem + "na média", true);
+        }
     }
 }
