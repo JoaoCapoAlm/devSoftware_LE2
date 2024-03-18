@@ -1,3 +1,4 @@
+import Exercicios.Exer01;
 import Helper.Prompt;
 
 public class Main {
@@ -7,7 +8,7 @@ public class Main {
         var executar = true;
         while (executar) {
             switch (Prompt.lerInteiro("Escolha uma opçao: ", false)) {
-                case 1 -> Prompt.imprimir("Exercício 01");
+                case 1 -> Exer01.Executar();
                 default -> Prompt.imprimirErro("Opção inválida!", true);
             }
 
@@ -35,7 +36,7 @@ public class Main {
     public static void MostrarMenu() {
         Prompt.separador();
         Prompt.imprimir("Menu", true);
-        Prompt.imprimir("1 - Exercício 01 -     ", true);
+        Prompt.imprimir("1 - Exercício 01 - ", true);
         Prompt.imprimir("2 - Exercício 02 - ", true);
         Prompt.imprimir("3 - Exercício 03 - ", true);
         Prompt.imprimir("4 - Exercício 04 - ", true);
