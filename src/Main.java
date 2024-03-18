@@ -1,4 +1,5 @@
 import Exercicios.Exer01;
+import Exercicios.Exer02;
 import Helper.Prompt;
 
 public class Main {
@@ -9,6 +10,7 @@ public class Main {
         while (executar) {
             switch (Prompt.lerInteiro("Escolha uma opçao: ", false)) {
                 case 1 -> Exer01.Executar();
+                case 2 -> Exer02.Executar();
                 default -> Prompt.imprimirErro("Opção inválida!", true);
             }
 
@@ -36,8 +38,8 @@ public class Main {
     public static void MostrarMenu() {
         Prompt.separador();
         Prompt.imprimir("Menu", true);
-        Prompt.imprimir("1 - Exercício 01 - ", true);
-        Prompt.imprimir("2 - Exercício 02 - ", true);
+        Prompt.imprimir("1 - Exercício 01 - Média de elementos do vetor", true);
+        Prompt.imprimir("2 - Exercício 02 - Elementos de vetor", true);
         Prompt.imprimir("3 - Exercício 03 - ", true);
         Prompt.imprimir("4 - Exercício 04 - ", true);
         Prompt.imprimir("5 - Exercício 05 - ", true);

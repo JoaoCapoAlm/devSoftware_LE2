@@ -3,6 +3,8 @@ package Helper;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * Um classe utilitária para imprimir e ler textos, números inteiros e decimais
@@ -37,6 +39,21 @@ public class Prompt {
         }
         for(var i : array){
             imprimir(String.valueOf(i), newLine);
+        }
+    }
+
+    public static void imprimirArray(double[] vetor, boolean newLine){
+        if(vetor == null)
+            return;
+        for (int i = 0; i < vetor.length; i++) {
+            String mensagem = String.valueOf(vetor[i]);
+
+            if (!newLine && i < vetor.length - 1)
+                mensagem += ", ";
+            else
+                newLine = true;
+
+            imprimir(mensagem, newLine);
         }
     }
 
