@@ -23,6 +23,5 @@ public class Exer04 {
             if (elemento < num)
                 Prompt.imprimir(elemento);
         }
-        Prompt.imprimirArray(vetor, false);
     }
 }
