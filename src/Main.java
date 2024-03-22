@@ -1,7 +1,4 @@
-import Exercicios.Exer01;
-import Exercicios.Exer02;
-import Exercicios.Exer03;
-import Exercicios.Exer04;
+import Exercicios.*;
 import Helper.Prompt;
 
 public class Main {
@@ -15,6 +12,7 @@ public class Main {
                 case 2 -> Exer02.Executar();
                 case 3 -> Exer03.Executar();
                 case 4 -> Exer04.Executar();
+                case 5 -> Exer05.Executar();
                 default -> Prompt.imprimirErro("Opção inválida!", true);
             }
 
@@ -46,7 +44,7 @@ public class Main {
         Prompt.imprimir("2 - Exercício 02 - Elementos de vetor", true);
         Prompt.imprimir("3 - Exercício 03 - Dobro de cada item", true);
         Prompt.imprimir("4 - Exercício 04 - Elementos menores que n", true);
-        Prompt.imprimir("5 - Exercício 05 - ", true);
+        Prompt.imprimir("5 - Exercício 05 - Elementos repetidos", true);
         Prompt.imprimir("6 - Exercício 06 - ", true);
         Prompt.imprimir("7 - Exercício 07 - ", true);
         Prompt.imprimir("8 - Exercício 08 - ", true);
