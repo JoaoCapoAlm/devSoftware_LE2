@@ -37,12 +37,18 @@ public class Prompt {
         System.out.flush();
     }
 
-    public static void imprimirArray(int[] array, boolean newLine){
-        if(array == null){
+    public static void imprimirArray(int[] vetor, boolean newLine){
+        if(vetor == null)
             return;
-        }
-        for(var i : array){
-            imprimir(String.valueOf(i), newLine);
+        for (int i = 0; i < vetor.length; i++) {
+            String mensagem = String.valueOf(vetor[i]);
+
+            if (!newLine && i < vetor.length - 1)
+                mensagem += ", ";
+            else
+                newLine = true;
+
+            imprimir(mensagem, newLine);
         }
     }
 
