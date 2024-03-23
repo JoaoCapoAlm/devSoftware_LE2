@@ -16,6 +16,7 @@ public class Main {
                 case 6 -> Exer06.Executar();
                 case 7 -> Exer07.Executar();
                 case 8 -> Exer08.Executar();
+                case 9 -> Exer09.Executar();
                 default -> Prompt.imprimirErro("Opção inválida!", true);
             }
 
