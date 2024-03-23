@@ -25,6 +25,10 @@ public class Prompt {
         System.out.flush();
     }
 
+    public static void imprimir(String mensagem){
+        imprimir(mensagem, true);
+    }
+
     /**
      * Imprime o objeto enviado no console.
      */

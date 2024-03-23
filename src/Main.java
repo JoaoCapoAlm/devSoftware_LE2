@@ -18,6 +18,7 @@ public class Main {
                 case 8 -> Exer08.Executar();
                 case 9 -> Exer09.Executar();
                 case 10 -> Exer10.Executar();
+                case 11 -> Exer11.Executar();
                 default -> Prompt.imprimirErro("Opção inválida!", true);
             }
 
@@ -55,7 +56,7 @@ public class Main {
         Prompt.imprimir("8 - Exercício 08 - Concatenação de vetores", true);
         Prompt.imprimir("9 - Exercício 09 - Juntando valores", true);
         Prompt.imprimir("10 - Exercício 10 - Invertendo vetor", true);
-        Prompt.imprimir("11 - Exercício 11 - ", true);
+        Prompt.imprimir("11 - Exercício 11 - Produto escalar", true);
         Prompt.imprimir("12 - Exercício 12 - ", true);
         Prompt.imprimir("13 - Exercício 13 - ", true);
         Prompt.imprimir("14 - Exercício 14 - ", true);
