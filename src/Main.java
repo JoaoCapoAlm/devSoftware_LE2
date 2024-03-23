@@ -22,6 +22,7 @@ public class Main {
                 case 12 -> Exer12.Executar();
                 case 13 -> Exer13.Executar();
                 case 14 -> Exer14.Executar();
+                case 15 -> Exer15.Executar();
                 default -> Prompt.imprimirErro("Opção inválida!", true);
             }
 
@@ -63,7 +64,7 @@ public class Main {
         Prompt.imprimir("12 - Exercício 12 - Produto dos elementos pares");
         Prompt.imprimir("13 - Exercício 13 - Fibonacci", true);
         Prompt.imprimir("14 - Exercício 14 - Atualizar vetor", true);
-        Prompt.imprimir("15 - Exercício 15 - ", true);
+        Prompt.imprimir("15 - Exercício 15 - Vetor com elementos crescentes", true);
         Prompt.separador();
         Prompt.linhaEmBranco();
     }
