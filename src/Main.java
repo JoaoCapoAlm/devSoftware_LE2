@@ -15,6 +15,7 @@ public class Main {
                 case 5 -> Exer05.Executar();
                 case 6 -> Exer06.Executar();
                 case 7 -> Exer07.Executar();
+                case 8 -> Exer08.Executar();
                 default -> Prompt.imprimirErro("Opção inválida!", true);
             }
 
@@ -49,7 +50,7 @@ public class Main {
         Prompt.imprimir("5 - Exercício 05 - Elementos repetidos", true);
         Prompt.imprimir("6 - Exercício 06 - Média ponderada", true);
         Prompt.imprimir("7 - Exercício 07 - Igualdade de vetores", true);
-        Prompt.imprimir("8 - Exercício 08 - ", true);
+        Prompt.imprimir("8 - Exercício 08 - Concatenação de vetores", true);
         Prompt.imprimir("9 - Exercício 09 - ", true);
         Prompt.imprimir("10 - Exercício 10 - ", true);
         Prompt.imprimir("11 - Exercício 11 - ", true);
